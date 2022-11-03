@@ -12,7 +12,8 @@ public class SnakeandLadder {
 		
 		playerPosition = playerPosition + dieValue;
 		System.out.println("Current position "+playerPosition);
-		
+			
+			//exact winning position
 			if(playerPosition > WINPOINT) {
 				playerPosition = playerPosition - dieValue;
 				System.out.println("\nPlayer is back at the position "+playerPosition+"\n");
@@ -67,7 +68,7 @@ public class SnakeandLadder {
 			position = sim.simulator(dice);
 			
 			if(position == WINPOINT) {
-				System.out.println("You won the match");
+				System.out.println("********You won the match********");
 				break;
 			}
 		} while("r".equals(roll)); 
